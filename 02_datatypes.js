@@ -56,6 +56,27 @@ console.table({
 
 // console.table({index: here we are getting type of data type of each variable});
 
+// primitive data types are immutable, meaning they cannot be changed once created.
+// However, we can create new variables with different values or types.
+// For example, we can create a new variable with a different string value:
+let newName = "Jane Smith"; // new string variable
+console.log(newName); // prints "Jane Smith"
+
+// types: String, Number, Boolean, Null, Undefined, Symbol, BigInt, Object
+
+// Non-primitive data types (also known as reference data types) are mutable, meaning they can be changed after creation.
+// Non-primitive data types include objects, arrays, and functions.
+// These data types can hold collections of values and more complex entities.
+// Examples of non-primitive data types include:
+// 1. Object: A collection of key-value pairs, where keys are strings and values can be of any type.
+// 2. Array: An ordered list of values, which can be of any type. Arrays are a special type of object.
+// 3. Function: A block of code that can be called and executed. Functions are also a special type of object.
+// 4. Date: A built-in object that represents dates and times.
+// 5. RegExp: A built-in object that represents regular expressions, used for pattern matching in strings.
+// 6. Error: A built-in object that represents runtime errors in JavaScript.
+// 7. Map: A collection of key-value pairs, where keys can be of any type and values can be of any type.
+// 8. Set: A collection of unique values, where each value can only occur once in the collection.
+
 
 
 
