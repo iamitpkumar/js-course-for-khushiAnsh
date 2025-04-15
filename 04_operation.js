@@ -153,3 +153,18 @@ console.log(newArr); // [1, 2, 3, 4, 5]
 // 26. Default operator: used to export a default module in ES6
 // 27. As operator: used to rename a module or import in ES6
 // 28. From operator: used to specify the source of a module in ES6
+
+// ES6 is a major update to JavaScript that includes new syntax and features, such as arrow functions, classes, template literals, destructuring, and more. 
+// It was released in 2015 and is also known as ECMAScript 2015. 
+// ES6 introduced many new features that make JavaScript more powerful and easier to use, such as: 
+// - Arrow functions: a shorter syntax for writing function expressions
+// - Classes: a new syntax for creating objects and inheritance
+// - Template literals: a new way to create strings with embedded expressions
+// - Destructuring: a new syntax for extracting values from arrays and objects
+// - Promises: a new way to handle asynchronous operations
+// - Modules: a new way to organize and share code
+// - Spread and rest operators: new syntax for working with arrays and objects
+// - Default parameters: a new way to set default values for function parameters
+// - Let and const: new keywords for declaring variables with block scope
+// - Symbol: a new primitive data type for creating unique identifiers
+// - Map and Set: new data structures for storing collections of values
