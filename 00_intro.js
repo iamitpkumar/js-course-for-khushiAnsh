@@ -23,3 +23,29 @@
 // ES6 is also known as ECMAScript 2015 and is widely supported by modern browsers and JavaScript engines.
 // ES7 is the seventh edition of the ECMAScript language specification and was released in 2016.
 // ​As of April 2025, the latest official version of JavaScript is ECMAScript 2024 (ES15), which was finalized in June 2024. 
+
+
+// JavaScript runs linearly, meaning that it executes code in the order it is written.
+// This means that if you have a long-running operation, it can block the execution of other code until it is completed.
+// To avoid this, JavaScript uses an event loop and a callback queue to manage asynchronous operations.
+// This allows JavaScript to handle multiple tasks concurrently without blocking the main thread.
+// The event loop continuously checks the callback queue for any pending tasks and executes them when the main thread is free.
+// This allows JavaScript to handle multiple tasks concurrently without blocking the main thread.
+
+console.log("Hello World!"); // prints "Hello World!" to the console
+console.log('Hello World!'); // prints "Hello World!" to the console
+console.log(`Hello World!`); // prints "Hello World!" to the console but using template literals
+console.warn("Hello World!"); // prints "Hello World!" to the console with a warning icon
+console.error("Hello World!"); // prints "Hello World!" to the console with an error icon
+console.info("Hello World!"); // prints "Hello World!" to the console with an info icon
+console.debug("Hello World!"); // prints "Hello World!" to the console with a debug icon
+console.clear(); // clears the console
+
+console.table("Hello World!"); // prints "Hello World!" to the console in a table format
+console.table([1, 2, 3]); // prints an array of numbers in a table format
+console.table({ 
+  name: "Khushi",
+  lastName: "Yadav",
+  age: 15
+}); // prints an object in a table format
+

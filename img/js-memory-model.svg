@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Stack vs Heap Memory in JavaScript</text>
+  
+  <!-- Memory Sections -->
+  <rect x="50" y="80" width="300" height="380" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="10" />
+  <rect x="450" y="80" width="300" height="380" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="10" />
+  
+  <!-- Section Titles -->
+  <text x="200" y="110" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#1565c0">Stack Memory</text>
+  <text x="600" y="110" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#c62828">Heap Memory</text>
+  
+  <!-- Stack Description -->
+  <text x="200" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#424242">(Static memory allocation, LIFO)</text>
+  
+  <!-- Heap Description -->
+  <text x="600" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#424242">(Dynamic memory allocation)</text>
+  
+  <!-- Stack Content -->
+  <rect x="90" y="160" width="220" height="40" fill="#bbdefb" stroke="#1976d2" stroke-width="1" />
+  <text x="200" y="184" font-family="Courier New" font-size="14" text-anchor="middle">let age = 30;</text>
+  
+  <rect x="90" y="210" width="220" height="40" fill="#bbdefb" stroke="#1976d2" stroke-width="1" />
+  <text x="200" y="234" font-family="Courier New" font-size="14" text-anchor="middle">const isActive = true;</text>
+  
+  <rect x="90" y="260" width="220" height="40" fill="#bbdefb" stroke="#1976d2" stroke-width="1" />
+  <text x="200" y="284" font-family="Courier New" font-size="14" text-anchor="middle">function add(a, b) { ... }</text>
+  
+  <rect x="90" y="310" width="220" height="40" fill="#bbdefb" stroke="#1976d2" stroke-width="1" />
+  <text x="200" y="334" font-family="Courier New" font-size="14" text-anchor="middle">const userRef = 0x3e7a9b0c</text>
+  
+  <rect x="90" y="360" width="220" height="40" fill="#bbdefb" stroke="#1976d2" stroke-width="1" />
+  <text x="200" y="384" font-family="Courier New" font-size="14" text-anchor="middle">const arrRef = 0x8f2c6d1a</text>
+  
+  <!-- Heap Content -->
+  <rect x="490" y="170" width="220" height="80" fill="#ffcdd2" stroke="#d32f2f" stroke-width="1" rx="5" />
+  <text x="500" y="190" font-family="Courier New" font-size="14">Object at 0x3e7a9b0c:</text>
+  <text x="510" y="215" font-family="Courier New" font-size="13">{name: "John",</text>
+  <text x="510" y="235" font-family="Courier New" font-size="13"> email: "john@example.com"}</text>
+  
+  <rect x="490" y="270" width="220" height="80" fill="#ffcdd2" stroke="#d32f2f" stroke-width="1" rx="5" />
+  <text x="500" y="290" font-family="Courier New" font-size="14">Array at 0x8f2c6d1a:</text>
+  <text x="510" y="315" font-family="Courier New" font-size="13">[1, "hello", true,</text>
+  <text x="510" y="335" font-family="Courier New" font-size="13"> {prop: "value"}]</text>
+  
+  <!-- Arrows from Stack to Heap -->
+  <line x1="310" y1="330" x2="480" y1="210" stroke="#616161" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5" />
+  <line x1="310" y1="380" x2="480" y1="310" stroke="#616161" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#616161" />
+    </marker>
+  </defs>
+  
+  <!-- Stack Characteristics -->
+  <text x="100" y="430" font-family="Arial" font-size="12" fill="#1565c0">• Fixed size memory</text>
+  <text x="100" y="450" font-family="Arial" font-size="12" fill="#1565c0">• Primitive types (numbers, booleans)</text>
+  <text x="100" y="470" font-family="Arial" font-size="12" fill="#1565c0">• References to heap objects</text>
+  
+  <!-- Heap Characteristics -->
+  <text x="490" y="430" font-family="Arial" font-size="12" fill="#c62828">• Dynamically allocated memory</text>
+  <text x="490" y="450" font-family="Arial" font-size="12" fill="#c62828">• Objects, Arrays, Functions (complex types)</text>
+  <text x="490" y="470" font-family="Arial" font-size="12" fill="#c62828">• Garbage collected when not referenced</text>
+</svg>
