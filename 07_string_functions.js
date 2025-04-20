@@ -18,16 +18,27 @@ console.log(str.startsWith("This")); // returns true if the string starts with t
 console.log(str.endsWith("long.")); // returns true if the string ends with the specified substring (long. in this case)
 console.log(str.slice(0, 4)); // returns a new string that is a portion of the original string (from index 0 to index 4)
 console.log(str.substring(0, 4)); // returns a new string that is a portion of the original string (from index 0 to index 4)
+
+//difference between slice and substring is that slice can accept negative indices, while substring cannot 
+
+console.log(str.slice(-5)); 
+console.log(str.substring(10));
+
+
 console.log(str.split(" ")); // splits the string into an array of substrings (using space as the delimiter)
 console.log(str.split(" ", 3)); // splits the string into an array of substrings (using space as the delimiter) and limits the number of substrings to 3
 console.log(str.replace("long", "short")); // replaces the first occurrence of the specified substring (long in this case) with the specified value (short in this case)
 console.log(str.replaceAll("long", "short")); // replaces all occurrences of the specified substring (long in this case) with the specified value (short in this case)
 console.log(str.concat(" ", strWithWhiteSpace)); // concatenates the two strings (adds a space between them)
 
-console.log(`${str} ${strWithWhiteSpace}`); 
+console.log(`${str} ${strWithWhiteSpace}`); // template literals (backticks) are used to create a string that can contain variables and expressions
 
-console.log(strWithWhiteSpace.repeat(2)); // repeats the string the specified number of times (2 in this case)
-console.log(strWithWhiteSpace.padStart(50, "*")); // pads the string with the specified character (space in this case) to the specified length (50 in this case)
-console.log(strWithWhiteSpace.padEnd(50, "*")); // pads the string with the specified character (space in this case) to the specified length (50 in this case)
-console.log(strWithWhiteSpace.match(/long/g)); // returns an array of all occurrences of the specified substring (long in this case) using regular expression
-console.log(strWithWhiteSpace.search(/long/g)); // returns the index of the first occurrence of the specified substring (long in this case) using regular expression
+console.log(str.repeat(2)); // repeats the string the specified number of times (2 in this case)
+console.log(str.padStart(50, "*")); // pads the string with the specified character (space in this case) to the specified length (50 in this case)
+console.log(str.padEnd(50, "*")); // pads the string with the specified character (space in this case) to the specified length (50 in this case)
+console.log(str.match("long")); // returns an array of first occurrences of the specified substring (long in this case)
+console.log(str.match(/long/g)); // returns an array of all occurrences of the specified substring (long in this case) using regular expression
+console.log(str.search("long")); // returns the index of the first occurrence of the specified substring (long in this case)
+console.log(str.search(/long/g)); // returns the index of the first occurrence of the specified substring (long in this case) using regular expression
+console.log(str.matchAll(/long/g)); // returns an iterator of all occurrences of the specified substring (long in this case) using regular expression
+
